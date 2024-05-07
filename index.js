@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public')); // Serve static files from public folder
 
 const { SF_LOGIN_URL, SF_CONSUMER_KEY, SF_USERNAME } = process.env;
-const privateKey = fs.readFileSync('private.key', 'utf8');
+const privateKey = fs.readFileSync('C:\Windows\System32\private.key', 'utf8');
 
 // Home route only renders the page with the button
 app.get('/', (req, res) => {
