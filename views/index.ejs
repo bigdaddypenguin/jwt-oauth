@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesforce JWT Authentication</title>
+</head>
+<body>
+    <h1>Salesforce JWT Authentication Tester</h1>
+    <p><%= message %></p>
+    <button onclick="authenticate()">Authenticate with Salesforce</button>
+    <% if (response) { %>
+        <h2>Response:</h2>
+        <pre><%= response %></pre>
+    <% } %>
+    <% if (error) { %>
+        <h2>Error:</h2>
+        <pre><%= error %></pre>
+    <% } %>
+    <script>
+        function authenticate() {
+            window.location.href = '/authenticate';
+        }
+    </script>
+</body>
+</html>
